@@ -18,12 +18,37 @@
     padding: 30px 0
     .mobile-menu
       display: block
+      &-button
+        display: block
     .mobile-nav
       &.active
         display: block
+    .header-content
+      .h1
+        font-size: 40px
+      p
+        font-size: 16px
+    .scroll-down-wrapper
+      .dot
+        width: 18px
+        font-size: 23px
+        padding: 0 0px 24px 6px
+        border: 1px solid $light
+      p
+        font-size: 10px
+        margin-bottom: 5px
+      .arrow
+        margin-bottom: 13px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+  header
+    .header-content
+      .h1
+        font-size: 30px
+      p
+        font-size: 16px
+
   .socials
     li
       a
