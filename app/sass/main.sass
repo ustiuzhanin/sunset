@@ -37,10 +37,43 @@ body
 	overflow-x: hidden
 	opacity: 1
 
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
+section
+	padding: 180px 0
+	text-align: center
+	.h2
+		margin-top: 0
+		margin-bottom: 100px
+		font-size: 30px
+		text-transform: uppercase
+		letter-spacing: 10px
+		color: #333
+
+.btn
+	display: inline-block
+	padding: 20px 50px 20px 30px
+	border: 1px solid $light
+	text-transform: uppercase
+	letter-spacing: 2px
+	color: $light
+	font-size: 12px
+	font-weight: 300
+	&:hover, &:focus
+		text-decoration: none
+		outline: 0
+		color: #fff
+	&:hover
+		transform: scale(1.1)
+	&::after
+		content: "\f105"
+		font-family: fontAwesome
+		font-size: 20px
+		padding-left: 10px
+		line-height: 1
+		position: absolute
+
+
+.nopadding
+	padding: 0
 
 .socials
 	padding: 0
@@ -209,6 +242,100 @@ header
 			transform: rotate(45deg)
 			margin: 0 auto
 			margin-bottom: 20px
+
+.introducing
+	text-align: center
+	background-color: #f3f3f3
+	img
+		width: 200px
+		margin: 0 auto
+		border: 8px solid #e7e7e7
+		border-radius: 10em
+		margin-bottom: 50px
+	p
+		color: #333
+
+.projects
+	.container-max-width
+		max-width: 1400px
+	.p-description-wrapper
+		padding: 60px
+		text-align: left
+		font-weight: 300
+		transition: background .7s ease
+		.h3
+			margin: 0
+			text-transform: uppercase
+			letter-spacing: 6px
+			font-weight: 300
+			font-size: 18px
+		p
+			margin: 0
+		a
+			color: $dark
+			transition: color .7s ease-in
+	.p-item-wrapper
+		&:hover
+			.showmore
+				opacity: 1
+				z-index: 10
+			.p-description-wrapper
+				background-color: $dark
+				a
+					color: $light
+					text-decoration: none
+		.showmore
+			opacity: 0
+			position: absolute
+			z-index: 1
+			max-width: 175px
+			margin: 0 auto
+			margin-top: -32px
+			top: 50%
+			left: 0
+			right: 0
+			transition: opacity .7s ease, transform 0.5s ease, z-index .7s ease
+	.p-image-wrapper
+		position: relative
+		.img-responsive
+			display: inline
+			position: relative
+			z-index: 5
+	.more-projects
+		margin-top: 60px
+		color: $dark
+		border-color: $dark
+		transition: transform 0.5s ease
+
+.all-projects-disable
+	display: none
+
+.items-popup
+	color: $light
+
+.proficiency
+	background-color: #222
+	.skills-wrapper
+		margin-bottom: 75px
+		.h2
+			color: $light
+		img
+			margin-bottom: 30px
+			height: 170px
+			width: 170px
+		span
+			position: absolute
+			font-size: 36px
+			color: $light
+			top: 55px
+			left: 0
+			right: 0
+		p
+			color: $light
+			font-size: 14px
+			font-weight: 300
+			letter-spacing: 4px
+			text-transform: uppercase
 
 
 
