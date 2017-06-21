@@ -356,19 +356,51 @@ header
 			height: 100%
 			vertical-align: middle
 			content: ''
-	// .hobbie
-	// 	&-first
-	// 		margin-right: 15px
-	// 	&-second
-	// 		margin-right: 26px
-	// 	&-third
-	// 		margin-left: 26px
-	// 	&-fourth
-	// 		margin-left: 15px
 	svg
 		display: inline-block
 		vertical-align: middle
 		transform: rotate(-45deg)
+
+.contacts
+	background-image: url('../img/contacts-bg.jpg')
+	background-repeat: no-repeat
+	background-size: cover
+	color: $light
+	font-weight: 300
+	.h2
+		color: $light
+	&-left-wrapper
+		text-align: right
+		padding-right: 15px
+		.contacts-btn
+			transition: transform 0.5s ease
+			margin-top: 55px
+	&-right-wrapper
+		text-align: left
+		padding-left: 5px
+		letter-spacing: 5px
+		ul
+			margin: 0
+			padding: 0
+		li
+			list-style-type: none
+			a
+				padding: 18px 10px
+				display: inline-block
+				color: $light
+				transition: color .5s ease
+				&:hover
+					color: #dfd068
+					text-decoration: none
+				i
+					font-size: 22px
+					width: 25px
+					text-align: center
+					margin-right: 25px
+				.fa-mobile
+					font-size: 28px
+
+
 
 
 
